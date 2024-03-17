@@ -11,6 +11,7 @@
 		2508054F2BA6400900E2F96A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2508054E2BA6400900E2F96A /* OpenGL.framework */; };
 		250805512BA6406000E2F96A /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 250805502BA6406000E2F96A /* libGLEW.2.2.0.dylib */; };
 		250805532BA640A300E2F96A /* libglfw.3.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 250805522BA640A300E2F96A /* libglfw.3.4.dylib */; };
+		250805592BA698AF00E2F96A /* resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 250805572BA6986400E2F96A /* resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +24,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		250805582BA6989A00E2F96A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				250805592BA698AF00E2F96A /* resources in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +42,8 @@
 		2508054E2BA6400900E2F96A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		250805502BA6406000E2F96A /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
 		250805522BA640A300E2F96A /* libglfw.3.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.4.dylib; path = ../../../../../usr/local/Cellar/glfw/3.4/lib/libglfw.3.4.dylib; sourceTree = "<group>"; };
+		250805562BA6906800E2F96A /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		250805572BA6986400E2F96A /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +80,9 @@
 		250805452BA63F5900E2F96A /* OpenGL test */ = {
 			isa = PBXGroup;
 			children = (
+				250805572BA6986400E2F96A /* resources */,
 				250805462BA63F5900E2F96A /* main.cpp */,
+				250805562BA6906800E2F96A /* Shader.h */,
 			);
 			path = "OpenGL test";
 			sourceTree = "<group>";
@@ -92,6 +107,7 @@
 				2508053F2BA63F5900E2F96A /* Sources */,
 				250805402BA63F5900E2F96A /* Frameworks */,
 				250805412BA63F5900E2F96A /* CopyFiles */,
+				250805582BA6989A00E2F96A /* CopyFiles */,
 			);
 			buildRules = (
 			);
