@@ -53,7 +53,7 @@ int main() {
     // vertices of the triangle
     GLfloat vertices[] = {
         // vertex           // colour
-        -.5f, -.5f, .0f,    .4f, .1f, .3f,
+        -.5f, -.5f, .0f,    .0f, .0f, .0f,
         .5f, -.5f, .0f,     .5f, .1f, .1f,
         .0f, .5f, .0f,      .0f, .1f, .5f
     };
