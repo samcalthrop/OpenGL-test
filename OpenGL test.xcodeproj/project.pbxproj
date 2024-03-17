@@ -11,7 +11,11 @@
 		2508054F2BA6400900E2F96A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2508054E2BA6400900E2F96A /* OpenGL.framework */; };
 		250805512BA6406000E2F96A /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 250805502BA6406000E2F96A /* libGLEW.2.2.0.dylib */; };
 		250805532BA640A300E2F96A /* libglfw.3.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 250805522BA640A300E2F96A /* libglfw.3.4.dylib */; };
-		250805592BA698AF00E2F96A /* resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 250805572BA6986400E2F96A /* resources */; };
+		2508055E2BA750F300E2F96A /* resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 250805572BA6986400E2F96A /* resources */; };
+		250805772BA7523500E2F96A /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 250805602BA7523500E2F96A /* image_helper.c */; };
+		250805782BA7523500E2F96A /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = 250805652BA7523500E2F96A /* image_DXT.c */; };
+		250805792BA7523500E2F96A /* SOIL2.c in Sources */ = {isa = PBXBuildFile; fileRef = 250805682BA7523500E2F96A /* SOIL2.c */; };
+		2508057A2BA7523500E2F96A /* wfETC.c in Sources */ = {isa = PBXBuildFile; fileRef = 250805722BA7523500E2F96A /* wfETC.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				250805592BA698AF00E2F96A /* resources in CopyFiles */,
+				2508055E2BA750F300E2F96A /* resources in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,29 @@
 		250805522BA640A300E2F96A /* libglfw.3.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.4.dylib; path = ../../../../../usr/local/Cellar/glfw/3.4/lib/libglfw.3.4.dylib; sourceTree = "<group>"; };
 		250805562BA6906800E2F96A /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 		250805572BA6986400E2F96A /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
+		250805602BA7523500E2F96A /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
+		250805612BA7523500E2F96A /* stbi_pkm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pkm.h; sourceTree = "<group>"; };
+		250805622BA7523500E2F96A /* stbi_qoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_qoi.h; sourceTree = "<group>"; };
+		250805632BA7523500E2F96A /* stbi_qoi_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_qoi_write.h; sourceTree = "<group>"; };
+		250805642BA7523500E2F96A /* wfETC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wfETC.h; sourceTree = "<group>"; };
+		250805652BA7523500E2F96A /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		250805662BA7523500E2F96A /* stbi_qoi_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_qoi_c.h; sourceTree = "<group>"; };
+		250805672BA7523500E2F96A /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
+		250805682BA7523500E2F96A /* SOIL2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL2.c; sourceTree = "<group>"; };
+		250805692BA7523500E2F96A /* pkm_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkm_helper.h; sourceTree = "<group>"; };
+		2508056A2BA7523500E2F96A /* stbi_DDS_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_c.h; sourceTree = "<group>"; };
+		2508056B2BA7523500E2F96A /* stbi_pvr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pvr.h; sourceTree = "<group>"; };
+		2508056C2BA7523500E2F96A /* stbi_ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_ext.h; sourceTree = "<group>"; };
+		2508056D2BA7523500E2F96A /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		2508056E2BA7523500E2F96A /* stbi_pvr_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pvr_c.h; sourceTree = "<group>"; };
+		2508056F2BA7523500E2F96A /* stbi_ext_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_ext_c.h; sourceTree = "<group>"; };
+		250805702BA7523500E2F96A /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		250805712BA7523500E2F96A /* SOIL2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL2.h; sourceTree = "<group>"; };
+		250805722BA7523500E2F96A /* wfETC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wfETC.c; sourceTree = "<group>"; };
+		250805732BA7523500E2F96A /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
+		250805742BA7523500E2F96A /* stbi_pkm_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_pkm_c.h; sourceTree = "<group>"; };
+		250805752BA7523500E2F96A /* stbi_DDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS.h; sourceTree = "<group>"; };
+		250805762BA7523500E2F96A /* pvr_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pvr_helper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +107,7 @@
 		250805452BA63F5900E2F96A /* OpenGL test */ = {
 			isa = PBXGroup;
 			children = (
+				2508055F2BA7523500E2F96A /* SOIL2 */,
 				250805572BA6986400E2F96A /* resources */,
 				250805462BA63F5900E2F96A /* main.cpp */,
 				250805562BA6906800E2F96A /* Shader.h */,
@@ -95,6 +123,36 @@
 				2508054E2BA6400900E2F96A /* OpenGL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2508055F2BA7523500E2F96A /* SOIL2 */ = {
+			isa = PBXGroup;
+			children = (
+				250805602BA7523500E2F96A /* image_helper.c */,
+				250805612BA7523500E2F96A /* stbi_pkm.h */,
+				250805622BA7523500E2F96A /* stbi_qoi.h */,
+				250805632BA7523500E2F96A /* stbi_qoi_write.h */,
+				250805642BA7523500E2F96A /* wfETC.h */,
+				250805652BA7523500E2F96A /* image_DXT.c */,
+				250805662BA7523500E2F96A /* stbi_qoi_c.h */,
+				250805672BA7523500E2F96A /* stb_image_write.h */,
+				250805682BA7523500E2F96A /* SOIL2.c */,
+				250805692BA7523500E2F96A /* pkm_helper.h */,
+				2508056A2BA7523500E2F96A /* stbi_DDS_c.h */,
+				2508056B2BA7523500E2F96A /* stbi_pvr.h */,
+				2508056C2BA7523500E2F96A /* stbi_ext.h */,
+				2508056D2BA7523500E2F96A /* stb_image.h */,
+				2508056E2BA7523500E2F96A /* stbi_pvr_c.h */,
+				2508056F2BA7523500E2F96A /* stbi_ext_c.h */,
+				250805702BA7523500E2F96A /* image_helper.h */,
+				250805712BA7523500E2F96A /* SOIL2.h */,
+				250805722BA7523500E2F96A /* wfETC.c */,
+				250805732BA7523500E2F96A /* image_DXT.h */,
+				250805742BA7523500E2F96A /* stbi_pkm_c.h */,
+				250805752BA7523500E2F96A /* stbi_DDS.h */,
+				250805762BA7523500E2F96A /* pvr_helper.h */,
+			);
+			path = SOIL2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +213,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2508057A2BA7523500E2F96A /* wfETC.c in Sources */,
 				250805472BA63F5900E2F96A /* main.cpp in Sources */,
+				250805792BA7523500E2F96A /* SOIL2.c in Sources */,
+				250805772BA7523500E2F96A /* image_helper.c in Sources */,
+				250805782BA7523500E2F96A /* image_DXT.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
